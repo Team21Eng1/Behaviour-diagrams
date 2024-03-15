@@ -1,0 +1,11 @@
+@startuml
+
+actor Student
+participant "Game System" as System
+Student -> System: Selects CS building
+System -> System: Verify availability of energy and time
+Student -> System: Confirms action
+System -> System: Deduct energy and time
+System -> System: Perform study action
+
+@enduml

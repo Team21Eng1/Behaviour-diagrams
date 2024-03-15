@@ -1,0 +1,24 @@
+@startuml
+
+left to right direction
+actor Student
+rectangle GameSystem{
+    usecase "Move around map" as Movemap
+    usecase "Interact with study locations" as Study
+    usecase "Interact with recreational activities" as Recreational
+    usecase "Interact with eating locations" as Eat
+    usecase "Sleep" as Sleep
+    usecase "Progress to the next day" as ProgressDay
+    usecase "Game Over (end of 7th day)" as GameOver
+    usecase "Click on Start Game " as StartGame
+
+Student -> (StartGame)
+StartGame -> Movemap
+Movemap -> Study
+Movemap -> Recreational
+Movemap -> Eat
+Movemap -> Sleep
+Sleep -> ProgressDay
+ProgressDay -> GameOver
+
+@enduml

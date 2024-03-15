@@ -1,0 +1,13 @@
+@startuml
+
+actor Student
+participant "Game System" as System
+
+Student -> System: Selects Piazza Building
+System ->  System: Verify availability of energy and time
+Student -> System: Confirms action
+System -> System: Increases energy
+System -> System: Decreases time
+System -> System: Perform eat action
+
+@enduml
