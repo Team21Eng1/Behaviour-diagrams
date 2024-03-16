@@ -1,0 +1,12 @@
+@startuml
+
+actor Student
+participant "Game System" as System
+Student -> System: Selects Feeding Ducks
+System -> System: Verify availability of energy and time
+System -> System: Deduct Energy and time
+System -> System: Perform recreational activity
+
+
+
+@enduml

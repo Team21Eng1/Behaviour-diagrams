@@ -1,0 +1,11 @@
+@startuml
+
+actor Student
+participant "Game System" as System
+Student -> System: Selects Bedroom
+System -> System: Perform sleep action
+System -> System: Increase Energy
+System -> System: Move to next da
+
+
+@enduml
